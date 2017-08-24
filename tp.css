@@ -1,0 +1,38 @@
+/*
+ * Selectors can be:
+ * - html tag -> body
+ * - id       -> #id
+ * - class    -> .class
+ * We can sum selectors with , -> table, li
+ * Possible to check previous brother with + -> h1+p
+ * Space to children (accept indirect include) -> section article
+ * > for direct children -> section > article
+ * We can cumul selector, example to get comment content -> #product-details article h2 + p
+ * We can use pseudo-classes (with : or ::) -> article:hover
+ * '*' for anything -> .container section * > p, section > * > p
+ */
+
+p::first-letter {
+    font-size: 1.2em;
+    color: red;
+}
+
+th, td {
+    border: 1px solid #bd2828;
+    padding: 5px;
+}
+
+tbody > tr:nth-child(-n+3),
+tbody > tr:nth-child(2n+3) {
+    background-color: lime;
+    color: black;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+td.stock {
+    text-align: right;
+}

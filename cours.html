@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+
+    <style media="screen">
+        dt {
+            font-weight: bold;
+            color: cyan;
+        }
+
+        dd {
+            color: purple;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="menu"></div>
+
+    <!-- Un titre de niveau 1. -->
+    <h1>La programmation web</h1>
+
+    <!-- Un titre de niveau 2. -->
+    <h2>La syntaxe html plus que de base</h2>
+    <!-- Un titre de niveau 3. -->
+    <h3>Les titres</h3>
+    <!-- Un paragraphe. -->
+    <p>Les titres s'écrivent avec les balises h[1-6], h1 représantant un titre de premier niveau, h2 de deuxième, ... Exemple : <pre>
+            <h1>Premier niveau</h1>
+            <h2>Deuxième niveau</h2>
+        </pre></p>
+    <h3>Les paragraphes</h3>
+    <p>Avec la balise p (franchement, tu aurais pu regarder le code source de la page !).</p>
+    <p>Avec la balise p (franchement, tu aurais pu regarder le code source de la page !).</p>
+    <p>Avec la balise p (franchement, tu aurais pu regarder le code source de la page !).</p>
+    <h3>Textes importants</h3>
+    <p>
+        Les titres sont évidemment importants. Sinon, on peut utiliser <strong>strong</strong> ou <em>em</em> or <mark>mark</mark>.
+    </p>
+    <h3>Balise br</h3>
+    <p>Dans un paragraphe, on peut revenir à la ligne avec une balise <em>autofermante</em> br.<br />Et ça marche plutôt <br /><br />bien. Ca marche aussi en dehors des paragraphes, mais c'est un abus abusif abusant pas bien pas beau à ne <strong>jamais</strong>        faire.</p>
+    <h3>Balise hr</h3>
+    <p>Un essai est plus rapide
+        <hr />qu'un long discours. Cet exemple est une mauvaise utilisation car c'est un séparateur logique.</p>
+
+    <h3>Mon 2 de troisième niveau</h3>
+    <p>Mon 01 paragraphe</p>
+    <p>Mon 02 paragraphe</p>
+    <p>Mon 03 paragraphe</p>
+
+    <h2>Les listes</h2>
+    <h3>Non ordonnées</h3>
+    <ul>
+        <li>ma</li>
+        <li>liste</li>
+        <li>non-ordonnée</li>
+    </ul>
+    <h3>Ordonnées</h3>
+    <ol>
+        <li>ma</li>
+        <li>liste</li>
+        <li>ordonnée</li>
+    </ol>
+    <h3>Définition</h3>
+    <dl>
+        <dt>ol</dt>
+        <dd>Liste ordonnée</dd>
+
+        <dt>ul</dt>
+        <dd>Liste non-ordonnée</dd>
+
+        <dt>dl</dt>
+        <dd>Liste de description</dd>
+    </dl>
+
+    <h2>Les liens</h2>
+    <p>C'est avec a <a target="_blank" href="https://www.google.fr/search?source=hp&q=balise+a+html&oq=balise+a+html&gs_l=psy-ab.3..0l4.2091.4140.0.4256.14.13.0.0.0.0.75.865.13.13.0.foo%2Cnso-ehuqi%3D1%2Cnso-ehuui%3D1%2Cewh%3D0%2Cnso-mplt%3D2%2Cnso-enksa%3D0%2Cnso-enfk%3D1%2Cnso-usnt%3D1%2Cnso-qnt-npqp%3D0-2401%2Cnso-qnt-npdq%3D0-47%2Cnso-qnt-npt%3D0-14%2Cnso-qnt-ndc%3D300%2Ccspa-dspm-nm-mnp%3D0-07%2Ccspa-dspm-nm-mxp%3D0-175%2Cnso-unt-npqp%3D0-2048%2Cnso-unt-npdq%3D0-4516%2Cnso-unt-npt%3D0-15143%2Cnso-unt-ndc%3D300%2Ccspa-uipm-nm-mnp%3D0-0189288%2Ccspa-uipm-nm-mxp%3D0-132501...0...1.1.64.psy-ab..1.13.860.0..0i131k1.-fNg-qbsgMw">mais Patrice est trop pressé pour les explications</a>.</p>
+
+    <h2>Les tableaux</h2>
+    <h3>Très simple</h3>
+    <table>
+        <tr>
+            <td>ma</td>
+            <td>cellule</td>
+            <td>td pour</td>
+        </tr>
+        <tr>
+            <td>représenter</td>
+            <td>table</td>
+            <td>cellule</td>
+        </tr>
+    </table>
+    <h3>Avec une ligne de titre</h3>
+    <table>
+        <tr>
+            <th>Titre 1</th>
+            <th>Titre 2</th>
+            <th>Titre 3</th>
+        </tr>
+        <tr>
+            <td>ma</td>
+            <td>cellule</td>
+            <td>td pour</td>
+        </tr>
+        <tr>
+            <td>représenter</td>
+            <td>table</td>
+            <td>cellule</td>
+        </tr>
+    </table>
+    <h3>Avec du style</h3>
+    <table class="table table-hover table-striped table-bordered">
+        <tr>
+            <th>Titre 1</th>
+            <th>Titre 2</th>
+            <th>Titre 3</th>
+        </tr>
+        <tr>
+            <td>ma</td>
+            <td>cellule</td>
+            <td>td pour</td>
+        </tr>
+        <tr>
+            <td>représenter</td>
+            <td>table</td>
+            <td>cellule</td>
+        </tr>
+    </table>
+    <h3>Avec les blocks</h3>
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Titre 1</th>
+                <th>Titre 2</th>
+                <th>Titre 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ma</td>
+                <td>cellule</td>
+                <td>td pour</td>
+            </tr>
+            <tr>
+                <td>représenter</td>
+                <td>table</td>
+                <td>cellule</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Fusions</h3>
+    <table class="table-bordered">
+        <tr>
+            <th colspan="3">Tous mes titres d'un block, oui du coup ça sert à rien</th>
+        </tr>
+        <tr>
+            <td>ma</td>
+            <td rowspan="2">cellule</td>
+            <td>td pour</td>
+        </tr>
+        <tr>
+            <td>représenter table</td>
+            <td></td>
+        </tr>
+    </table>
+    <h3>Avec d
+
+        <h3>Mon 3 de troisième niveau</h3>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="menu.js" charset="utf-8"></script>
+</body>
+
+</html>
