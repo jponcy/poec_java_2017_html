@@ -21,11 +21,21 @@ if (typeof $ === typeof undefined) {
                     .attr('href', 'tp.html')
                     .html('TP')
                 ))
+        ))
+        .append($('<li>')
+            .addClass('dropdown')
+            .append($('<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JS <span class="caret"></span></a>'))
+            .append($('<ul>')
+                .addClass('dropdown-menu')
+                .append($('<li>').append($('<a>')
+                    .attr('href', 'js.html')
+                    .html('Examples')
+                ))
+            )
 //             <!-- <li role="separator" class="divider"></li>
 //             <li><a href="#">Separated link</a></li>
 //             <li role="separator" class="divider"></li>
 //             <li><a href="#">One more separated link</a></li> -->
-            )
     );
 
     var navRight = $('<div>')
